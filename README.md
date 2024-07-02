@@ -2,7 +2,6 @@
 
 如今，大语言模型在很多场合蓬勃发展，我们都见证了人工智能给世界带来的重大影响，尤其是*ChatGPT*和其他大型语言模型的发布，我们都相信它将在未来几年改变我们的日常生活。但大多数模型仍是各自为政。虽然大语言模型 (LLM) 具有巨大的潜力，但它们也面临着挑战。使用 LLM 需要高质量的训练数据、专业技能和知识以及大量的计算资源。分叉和重新训练模型的过程也很耗时且成本高昂。开源社区通常为模型的生成贡献最多，但他们的贡献可能需要数月或数年才能合并回基础模型 （如果他们能回归的话） 
 
-[https://dj6xx83k4yq5f.cloudfront.net/ilab_loop_ca363766e0_1_85b31d979e.mp4](https://dj6xx83k4yq5f.cloudfront.net/ilab_loop_ca363766e0_1_85b31d979e.mp4)
 
 ### 传统的RAG （检索增强生成）流程
 
@@ -18,13 +17,12 @@
 
 所需的每个微调都**完全依赖于用户的责任**。
 
-[https://media.licdn.com/dms/image/D4D22AQGHnFwy9gevFA/feedshare-shrink_800/0/1716364188000?e=1721865600&v=beta&t=ZlPMYHcjVVTboYdipXZqbzGQt5ck45IVK7J7o-9pVKA](https://media.licdn.com/dms/image/D4D22AQGHnFwy9gevFA/feedshare-shrink_800/0/1716364188000?e=1721865600&v=beta&t=ZlPMYHcjVVTboYdipXZqbzGQt5ck45IVK7J7o-9pVKA)
 
 如果你仔细想想，你会发现它极大地减缓了创新。开源给软件行业带来的真正文化转变之一是能够**围绕**开源项目进行协作，从而创造出更好的解决方案和产品。公司和个人可以共享和贡献代码、修复错误、构建新功能，作为一个拥有共同目标的社区的一部分——**持续改进**。
 
 人工智能的生命周期变得与传统软件非常相似——它是使用已知的编程语言和框架开发的，它可以被打包并构建到容器中，我们测试它，监控它，部署它。
 
-![传统方式没有社区，没有办法贡献代码，也没有办法丰富数据集](InstructLab%2027c6c5a445d84bd4a4ec20967f9e1003/Untitled.png)
+![传统方式没有社区，没有办法贡献代码，也没有办法丰富数据集]
 
 传统方式没有社区，没有办法贡献代码，也没有办法丰富数据集
 
@@ -36,7 +34,7 @@
 
 ## **InstructLab 框架**
 
-![InstructLab 社区模型将使用最新贡献进行更新，并定期在 Hugging Face 上分享。](InstructLab%2027c6c5a445d84bd4a4ec20967f9e1003/Untitled%201.png)
+![InstructLab 社区模型将使用最新贡献进行更新，并定期在 Hugging Face 上分享。]
 
 InstructLab 社区模型将使用最新贡献进行更新，并定期在 Hugging Face 上分享。
 
@@ -56,7 +54,7 @@ InstructLab 的训练方案将新信息吸收到模型中，而不会导致模�
 
 **这个项目让不懂[transformer模型](https://www.zhihu.com/search?q=transformer%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22699500296%22%7D), 不懂LLM的人, 也能训练自己的模型。**共同构建更好的模型，就像参与开源软件项目一样。
 
-![**L**arge-scale **A**lignment for chat**B**ots](InstructLab%2027c6c5a445d84bd4a4ec20967f9e1003/Untitled%202.png)
+![**L**arge-scale **A**lignment for chat**B**ots]
 
 **L**arge-scale **A**lignment for chat**B**ots
 
@@ -86,7 +84,7 @@ pip install instructlab
 
 ### 下载 IBM Granite 模型
 
-先准备好 HF Token = `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`
+先准备好 HF Token = `xxxxxxxxxxxxxxxxxx`
 
 https://huggingface.co/settings/tokens
 
@@ -229,7 +227,6 @@ ilab generate --model models/granite-7b-lab-Q4_K_M.gguf --num-instructions 100 -
 
 此过程将需要一些时间，具体取决于您的系统。在我的 M1 Mac Pro 上大约需要 21 分钟。您可以在输出中看到 ETA。
 
-![Untitled](InstructLab%2027c6c5a445d84bd4a4ec20967f9e1003/Untitled%203.png)
 
 生成合成数据后，您将看到已生成样本数和已丢弃样本数的摘要
 
